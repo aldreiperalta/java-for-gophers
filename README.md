@@ -1,6 +1,6 @@
 # ☕ Java para Gophers & Data Scientists
 
-Bem-vindo ao meu diário de bordo na transição para o ecossistema Java 21 / Spring Boot. Este repositório é estruturado como um livro de consulta rápida.
+Guia prático de transição para o Java 21, focado em desenvolvimento corporativo e sistemas de alta performance.
 
 ## 📖 Sumário (Capítulos)
 
@@ -13,14 +13,10 @@ Bem-vindo ao meu diário de bordo na transição para o ecossistema Java 21 / Sp
 
 ---
 
-## ⚡ Quick Reference (Go vs Java)
+## 📌 Mapa de Equivalência (Consulta Rápida)
 
-| Conceito | Go (Gopher) | Java 21 (Moderno) |
-| :--- | :--- | :--- |
-| **Entidade** | `struct` | `record` |
-| **Contrato** | `interface` (implícita) | `interface` (explícita) |
-| **Concorrência** | `goroutines` | `Virtual Threads` (Loom) |
-| **Erros** | `if err != nil` | `try-catch` |
-
----
-*Este repositório está em constante atualização à medida que avanço nos estudos.*
+| Conceito | Go (Gopher) | R (Data Science) | Java 21 (Moderno) |
+| :--- | :--- | :--- | :--- |
+| **Entidade** | `struct` | `data.frame` | `record` |
+| **Contrato** | `interface` | `S3 Methods` | `interface` |
+| **Concorrência** | `goroutines` | N/A | `Virtual Threads` |
