@@ -1,26 +1,26 @@
 # ☕ Java para Gophers & Data Scientists
 
-Este repositório é um guia prático e progressivo para dominar o Java 21, focado em quem já tem experiência com Go e R.
+Bem-vindo ao meu diário de bordo na transição para o ecossistema Java 21 / Spring Boot. Este repositório é estruturado como um livro de consulta rápida.
 
-## 🗺️ Sumário do Livro
+## 📖 Sumário (Capítulos)
 
-### Parte 1: Fundamentos e Transição
-* **Capítulo 1:** [O Choque de Realidade: Tipagem e Estrutura](./docs/01-choque-de-realidade.md)
-* **Capítulo 2:** [Sua Primeira API com Spring Boot](./docs/02-primeira-api.md)
+### Parte 1: O Choque Cultural
+* **Capítulo 1:** [Fundamentos: Tipagem, Records e Interfaces](./docs/01-fundamentos.md)
+* **Capítulo 2:** [Minha Primeira API: Spring Boot na Prática](./docs/02-primeira-api.md)
 
-### Parte 2: Performance e Concorrência
-* **Capítulo 3:** [Virtual Threads (Loom) vs Goroutines](./docs/03-virtual-threads.md)
-
----
-
-## 📌 Mapa de Equivalência (Consulta Rápida)
-
-| Conceito | Go (Gopher) | R (Data Science) | Java 21 (Moderno) |
-| :--- | :--- | :--- | :--- |
-| **Entidade** | `struct` | `data.frame` | `record` |
-| **Contrato** | `interface` (implícita) | `S3 Methods` | `interface` (explícita) |
-| **Coleções** | `slice` / `map` | `list` / `vector` | `List` / `Map` |
-| **Concorrência** | `goroutines` | N/A | `Virtual Threads` |
+### Parte 2: Engenharia de Performance
+* **Capítulo 3:** [Concorrência: Virtual Threads vs Goroutines](./docs/03-virtual-threads.md)
 
 ---
-*Dica: Navegue pelos links acima para acessar o conteúdo detalhado de cada etapa.*
+
+## ⚡ Quick Reference (Go vs Java)
+
+| Conceito | Go (Gopher) | Java 21 (Moderno) |
+| :--- | :--- | :--- |
+| **Entidade** | `struct` | `record` |
+| **Contrato** | `interface` (implícita) | `interface` (explícita) |
+| **Concorrência** | `goroutines` | `Virtual Threads` (Loom) |
+| **Erros** | `if err != nil` | `try-catch` |
+
+---
+*Este repositório está em constante atualização à medida que avanço nos estudos.*
