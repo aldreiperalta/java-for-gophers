@@ -22,6 +22,13 @@ Vindo do R, você está acostumado com o `pipe` (`%>%`). No Java 21, usamos a **
 | Agrupar | `group_by(col1)` | `.collect(Collectors.groupingBy(...))` |
 
 ---
+### ✅ Teste de Execução
+Ao rodar o código `Main.java`, o console retorna:
+> `Produtos Premium: Laptop, Monitor`
+
+**O que aprendi aqui:**
+* O `record` economiza dezenas de linhas de código em comparação às classes antigas.
+* A `Streams API` substitui loops `for` complexos por uma lógica linear e limpa (estilo funcional do R).
 
 ## 🏗️ Estrutura de Pastas de um Projeto Java Professional
 Ao contrário do Go, onde a estrutura é flexível, o Java segue o padrão **Maven**:
