@@ -11,18 +11,7 @@ Embora o Java seja fortemente tipado, desde o Java 10 podemos usar o `var` para 
 ## 2. Records: As novas "Structs"
 Em Go, usamos `structs` para dados. No Java antigo, usávamos classes pesadas com Getters e Setters. No Java 21, usamos **Records**. Eles são imutáveis e vêm com métodos prontos.
 
-
-
-### Exemplo de Comparação:
-**Em Go:**
-```go
-type User struct {
-    ID   int
-    Name String
-}
-
-
-## 📊 O "Jeito R" de manipular dados no Java
+## 3. 📊 O "Jeito R" de manipular dados no Java
 Vindo do R, você está acostumado com o `pipe` (`%>%`). No Java 21, usamos a **Streams API** para processar coleções de forma funcional.
 
 | Operação | R (dplyr) | Java (Streams) |
@@ -40,3 +29,15 @@ Ao contrário do Go, onde a estrutura é flexível, o Java segue o padrão **Mav
 - `src/main/resources`: Configurações (`application.properties`) e arquivos estáticos.
 - `src/test/java`: Onde você DEVE escrever seus testes (JUnit).
 - `pom.xml`: O "cérebro" do projeto (equivalente ao `go.mod`).
+
+
+### Exemplo de Comparação:
+**Em Go:**
+```go
+type User struct {
+    ID   int
+    Name String
+}
+
+
+
