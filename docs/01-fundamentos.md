@@ -1,19 +1,22 @@
-# 🚀 Capítulo 2: Minha Primeira API: Spring Boot na Prática
+# 📓 Capítulo 1: Fundamentos, Records e Interfaces
 
-Neste capítulo, criamos um endpoint real para entender como o Java entrega JSON de forma eficiente.
+Neste capítulo, exploramos a base do Java 21. O foco é entender a tipagem forte e as estruturas que substituem as `structs` do Go e os `data.frames` do R.
 
-### O Código do Controller
-```java
-package com.example.demo;
+## 1. Variáveis e Tipagem (O "var" moderno)
+Embora o Java seja fortemente tipado, desde o Java 10 podemos usar o `var` para inferência de tipos em variáveis locais, similar ao `:=` do Go.
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
-import java.util.Map;
+* **Java:** `var nome = "Gopher";` (O compilador entende que é String).
+* **Go:** `nome := "Gopher"`
 
-@RestController
-public class WelcomeController {
-    @GetMapping("/status")
-    public Map<String, String> getStatus() {
-        return Map.of("status", "UP", "language", "Java 21");
-    }
+## 2. Records: As novas "Structs"
+Em Go, usamos `structs` para dados. No Java antigo, usávamos classes pesadas com Getters e Setters. No Java 21, usamos **Records**. Eles são imutáveis e vêm com métodos prontos.
+
+
+
+### Exemplo de Comparação:
+**Em Go:**
+```go
+type User struct {
+    ID   int
+    Name String
 }
