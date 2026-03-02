@@ -20,3 +20,23 @@ type User struct {
     ID   int
     Name String
 }
+
+
+## 📊 O "Jeito R" de manipular dados no Java
+Vindo do R, você está acostumado com o `pipe` (`%>%`). No Java 21, usamos a **Streams API** para processar coleções de forma funcional.
+
+| Operação | R (dplyr) | Java (Streams) |
+| :--- | :--- | :--- |
+| Filtrar | `filter(df, x > 10)` | `.filter(x -> x > 10)` |
+| Transformar | `mutate(df, y = x * 2)` | `.map(x -> x * 2)` |
+| Selecionar | `select(df, col1)` | `.map(User::name)` |
+| Agrupar | `group_by(col1)` | `.collect(Collectors.groupingBy(...))` |
+
+---
+
+## 🏗️ Estrutura de Pastas de um Projeto Java Professional
+Ao contrário do Go, onde a estrutura é flexível, o Java segue o padrão **Maven**:
+- `src/main/java`: Onde mora o seu código `.java`.
+- `src/main/resources`: Configurações (`application.properties`) e arquivos estáticos.
+- `src/test/java`: Onde você DEVE escrever seus testes (JUnit).
+- `pom.xml`: O "cérebro" do projeto (equivalente ao `go.mod`).
